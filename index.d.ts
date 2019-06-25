@@ -302,6 +302,10 @@ class MQGMO {
  * @static
  * @type Object
  * @todo Can this be documented better?
+ *
+ * Get some basic definitions. The constants (MQC) will be
+ * re-exported for users of this module. The types (MQT) are not
+ * exported as they should not be used by anyone else directly.
  */
 var MQC: any;
 
