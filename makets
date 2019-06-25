@@ -1,4 +1,4 @@
-#yarn add tsd-jsdoc jsdoc
+yarn add tsd-jsdoc jsdoc
 yarn run jsdoc -t node_modules/tsd-jsdoc/dist -r lib
 
 echo "declare module 'ibmmq' {
