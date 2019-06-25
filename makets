@@ -1,0 +1,8 @@
+#yarn add tsd-jsdoc jsdoc
+yarn run jsdoc -t node_modules/tsd-jsdoc/dist -r lib
+
+echo "declare module 'ibmmq' {
+" > index.d.ts
+cat out/types.d.ts | sed "s/declare //g" >> index.d.ts
+echo '
+}' >> index.d.ts
